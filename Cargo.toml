@@ -1,0 +1,21 @@
+[package]
+name = "estrannaise-rs"
+version = "0.1.0"
+edition = "2024"
+description = "Estradiol PK modelling library - port of estrannaise.js"
+repository = "https://github.com/dylan-park/estrannaise-rs"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = []
+wasm    = ["wasm-bindgen"]
+
+[dependencies]
+wasm-bindgen = { version = "0.2.111", optional = true }
+
+[profile.release]
+opt-level = "z"
+lto = true
