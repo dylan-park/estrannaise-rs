@@ -1,6 +1,6 @@
 # estrannaise-rs
 
-A Rust library that is a 1:1 port of the pharmacokinetic (PK) model from the [estrannaise](https://git.gay/Estra/estrannaise) JavaScript project. It models serum estradiol levels for various estradiol ester formulations used in transfeminine HRT.
+A Rust library that is a 1:1 port of the pharmacokinetic (PK) model from the [estrannaise.js](https://github.com/WHSAH/estrannaise.js) project. It models serum estradiol levels for various estradiol ester formulations used in transfeminine HRT.
 
 Compiles to native Rust **and** WebAssembly (via `wasm-bindgen`).
 
